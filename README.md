@@ -37,3 +37,7 @@ npx skills remove smartup
 ## Use
 
 In Claude Code: `/smartup <your task>`. Or say "smartup", "deeper version", or "level up this prompt".
+
+## Credit
+
+Based on the "depth" prompt by [Felix Rieseberg](https://x.com/felixrieseberg) ([X post](https://x.com/felixrieseberg/status/2110023283169247623)) from his tutorial [How to be more ambitious: A tutorial for humans with models](https://felixrieseberg.com/how-to-be-more-ambitious-a-tutorial-for-humans-with-models/).
