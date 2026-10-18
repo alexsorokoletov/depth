@@ -1,9 +1,9 @@
 ---
-name: smartup
-description: Turn a shallow task request into the version a top professional in that field would do — deeper, not bigger. Names what the pro would add, the rawest source material, the specific methods/tools, and an external check (not the user, not Claude) that proves the result right; then rewrites the user's prompt to ask for exactly that. Use when the user says "smartup", "/smartup", "deeper version", "what would a pro do here", "rewrite my prompt", "level up this prompt", or "make this ask smarter".
+name: depth
+description: Turn a shallow task request into the version a top professional in that field would do — deeper, not bigger. Names what the pro would add, the rawest source material, the specific methods/tools, and an external check (not the user, not Claude) that proves the result right; then rewrites the user's prompt to ask for exactly that. Use when the user says "depth", "/depth", "deeper version", "what would a pro do here", "rewrite my prompt", "level up this prompt", or "make this ask smarter".
 ---
 
-# smartup — deeper version of a task, then a rewritten prompt
+# depth — deeper version of a task, then a rewritten prompt
 
 Goal: make the task **deeper, not bigger**. Do not add scope for its own sake. Add only what makes
 the result more true, more checkable, or more fit for its audience.
