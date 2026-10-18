@@ -27,4 +27,4 @@ In Claude Code: `/depth <your task>`. Or say "deeper version" or "level up this 
 
 ## License
 
-[MIT](LICENSE) for this repo's own content. The four-question prompt wording belongs to Felix Rieseberg (see above) and is not covered by MIT.
+[MIT](LICENSE) for this repo's own content. The four-question prompt wording belongs to Felix Rieseberg (see above) and is not covered by MIT. See [NOTICE](NOTICE).
