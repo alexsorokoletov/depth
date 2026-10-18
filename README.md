@@ -21,8 +21,6 @@ With [`skills`](https://github.com/vercel-labs/skills):
 npx skills add alexsorokoletov/depth
 ```
 
-While this repo is private, `npx skills` clones it with your own git credentials. You need read access and a working `git clone` (SSH key or `gh auth login`).
-
 ## Use
 
 In Claude Code: `/depth <your task>`. Or say "deeper version" or "level up this prompt".
