@@ -13,30 +13,23 @@ Do NOT start the task itself. Output the analysis and the rewritten prompt, then
 ## Steps
 
 1. **Ground it first (cheap).** If the task touches the current repo or files, spend 1–3 quick reads
-   to find facts that change the answer (constraints, docs, permissions, existing scripts, policies).
-   Example: a "100% local" claim vs an `INTERNET` permission and an SDK that sends diagnostics.
-   A pro catches the claim that would not survive scrutiny.
-2. **Resolve ambiguity in one line.** If a term is unclear (typo, a style or creator name), state
-   your reading and ask the user to correct it. Do not block on it.
+   to find facts that change the answer. A pro catches the claim that would not survive scrutiny.
+2. **Resolve ambiguity in one line.** If a term is unclear, state your reading and ask the user to
+   correct it. Do not block on it.
 3. **Answer the four questions**, short and specific to this task (no generic advice):
-   1. **What a top professional would do that the user did not ask for.** Framing, the one claim or
-      outcome that matters, the objection to answer first, audience/platform fit, plan before execution.
-   2. **Rawest material.** The primary source a pro starts from instead of digested summaries:
-      raw recordings, logs, real user screens, traffic counters, original data, real people's reactions.
-      Note privacy/safety limits on that material (project rules, PII).
-   3. **Specific methods and tools.** Named techniques and tools (CLI commands, libraries, frameworks,
-      formats). Prefer tools already in the repo or on the machine.
-   4. **What, other than you or me, shows the result is right.** External, checkable signals:
-      measurements, tests, fresh users who were not briefed, domain owners, platform metrics,
-      policy/doc consistency. Give a pass condition for each.
-4. **Rewrite the prompt.** A blockquote the user can paste back. It must:
+   1. **What a top professional in this field would do here that the user is not asking for.**
+   2. **The rawest material they would start from** instead of what has already been digested for
+      the user. Note privacy/safety limits on that material.
+   3. **The specific methods and tools they would use.** Prefer tools already in the repo or on the machine.
+   4. **What, other than you or me, would show the result is right.** Give a pass condition for each.
+4. **Rewrite the prompt to ask for exactly that.** A blockquote the user can paste back. It must:
    - state the one goal/claim and the audience;
    - put the plan/approval gate before execution;
-   - name the raw inputs, the tools, and where outputs go (respect "never commit" rules);
+   - name the raw inputs, the tools, and where outputs go;
    - list the verification steps with pass conditions;
-   - mark outward-facing actions (posting, sending, publishing) as confirm-first;
+   - mark outward-facing actions as confirm-first;
    - end with the deliverable: files + a short report with measured numbers and the claim's limits.
-5. **Offer the next step** in one line (e.g. "Start with step 1?"). Do not execute without a yes.
+5. **Offer the next step** in one line. Do not execute without a yes.
 
 ## Output shape
 
@@ -63,8 +56,7 @@ Do NOT start the task itself. Output the analysis and the rewritten prompt, then
 
 ## Rules
 
-- Dense and concise. Bullets, not paragraphs. Follow the user's global style rules (e.g. TL;DR for
-  long replies, Simplified Technical English for long text).
+- Dense and concise. Bullets, not paragraphs. Follow the user's global style rules.
 - Be specific to the domain and the project. Cite file paths for facts you found.
 - Honesty over hype: if a claim the user wants to make is not fully true, say so and give the
   exact wording that is true.
